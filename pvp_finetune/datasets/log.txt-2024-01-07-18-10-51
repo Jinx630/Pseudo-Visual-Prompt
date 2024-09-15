@@ -1,0 +1,257 @@
+Loading trainer: CoOp
+Loading dataset: COCO2014_partial
+Loading preprocessed few-shot data from prompt_learning/DATA/COCO/split_fewshot/shot_1-seed_1.pkl
+loading annotations into memory...
+Done (t=9.49s)
+creating index...
+index created!
+loading annotations into memory...
+Done (t=5.10s)
+creating index...
+index created!
+train_labels.shape = (82783, 80)
+Building transform_train, more augment
++ random resized crop (size=(224, 224), scale=(0.5, 1.0)), chosen with cutout
++ MLC_Policy 
++ random flip
++ to torch tensor of range [0, 1]
++ normalization (mean=[0.48145466, 0.4578275, 0.40821073], std=[0.26862954, 0.26130258, 0.27577711])
+Building transform_test
+transform_test choices: ('resize', 'normalize')
++ resize the to (224, 224)
++ to torch tensor of range [0, 1]
++ normalization (mean=[0.48145466, 0.4578275, 0.40821073], std=[0.26862954, 0.26130258, 0.27577711])
+***** Dataset statistics *****
+  Dataset: COCO2014_partial
+  # classes: 80
+  # train_x: 80
+  # val: 2,026
+  # test: 40,504
+Loading CLIP (backbone: RN101)
+Building custom CLIP
+Initializing a generic context
+Initial context: "X X X X X X X X X X X X X X X X"
+Number of context words (tokens): 16
+Turning off gradients in both the image and the text encoder
+Loading evaluator: MLClassification
+No checkpoint found, train from scratch
+Initializing summary writer for tensorboard with log_dir=output/few-shot/coco-1/tensorboard
+epoch [1/50][1/1]	time 1.927 (1.927)	data 1.416 (1.416)	eta 0:01:34	loss 15.4954 (15.4954)	lr 2.000000e-03
+Do evaluation on val set
+mAP score default: 20.999245182981678
+mAP score: 20.999245182981678
+Checkpoint saved to "output/few-shot/coco-1/prompt_learner/model-best.pth.tar"
+epoch [2/50][1/1]	time 1.239 (1.239)	data 1.158 (1.158)	eta 0:00:59	loss 14.5143 (14.5143)	lr 1.998027e-03
+Do evaluation on val set
+mAP score default: 26.94427717617035
+mAP score: 26.94427717617035
+Checkpoint saved to "output/few-shot/coco-1/prompt_learner/model-best.pth.tar"
+epoch [3/50][1/1]	time 1.273 (1.273)	data 1.197 (1.197)	eta 0:00:59	loss 14.2889 (14.2889)	lr 1.992115e-03
+Do evaluation on val set
+mAP score default: 37.94850028171371
+mAP score: 37.94850028171371
+Checkpoint saved to "output/few-shot/coco-1/prompt_learner/model-best.pth.tar"
+epoch [4/50][1/1]	time 1.311 (1.311)	data 1.235 (1.235)	eta 0:01:00	loss 14.1060 (14.1060)	lr 1.982287e-03
+Do evaluation on val set
+mAP score default: 47.85181178490285
+mAP score: 47.85181178490285
+Checkpoint saved to "output/few-shot/coco-1/prompt_learner/model-best.pth.tar"
+epoch [5/50][1/1]	time 1.382 (1.382)	data 1.305 (1.305)	eta 0:01:02	loss 14.8161 (14.8161)	lr 1.968583e-03
+Do evaluation on val set
+mAP score default: 46.92878213368068
+mAP score: 46.92878213368068
+epoch [6/50][1/1]	time 1.277 (1.277)	data 1.202 (1.202)	eta 0:00:56	loss 13.7799 (13.7799)	lr 1.951057e-03
+Do evaluation on val set
+mAP score default: 42.53383572834015
+mAP score: 42.53383572834015
+epoch [7/50][1/1]	time 1.332 (1.332)	data 1.256 (1.256)	eta 0:00:57	loss 13.8246 (13.8246)	lr 1.929776e-03
+Do evaluation on val set
+mAP score default: 48.45493980067388
+mAP score: 48.45493980067388
+Checkpoint saved to "output/few-shot/coco-1/prompt_learner/model-best.pth.tar"
+epoch [8/50][1/1]	time 1.352 (1.352)	data 1.276 (1.276)	eta 0:00:56	loss 11.7670 (11.7670)	lr 1.904827e-03
+Do evaluation on val set
+mAP score default: 47.775811475715244
+mAP score: 47.775811475715244
+epoch [9/50][1/1]	time 1.371 (1.371)	data 1.296 (1.296)	eta 0:00:56	loss 13.7730 (13.7730)	lr 1.876307e-03
+Do evaluation on val set
+mAP score default: 47.308500061909555
+mAP score: 47.308500061909555
+epoch [10/50][1/1]	time 1.283 (1.283)	data 1.207 (1.207)	eta 0:00:51	loss 13.4938 (13.4938)	lr 1.844328e-03
+Do evaluation on val set
+mAP score default: 51.60790925192582
+mAP score: 51.60790925192582
+Checkpoint saved to "output/few-shot/coco-1/prompt_learner/model-best.pth.tar"
+epoch [11/50][1/1]	time 1.395 (1.395)	data 1.319 (1.319)	eta 0:00:54	loss 13.0418 (13.0418)	lr 1.809017e-03
+Do evaluation on val set
+mAP score default: 49.93815302356133
+mAP score: 49.93815302356133
+epoch [12/50][1/1]	time 1.418 (1.418)	data 1.342 (1.342)	eta 0:00:53	loss 12.5457 (12.5457)	lr 1.770513e-03
+Do evaluation on val set
+mAP score default: 52.157199740656736
+mAP score: 52.157199740656736
+Checkpoint saved to "output/few-shot/coco-1/prompt_learner/model-best.pth.tar"
+epoch [13/50][1/1]	time 1.322 (1.322)	data 1.244 (1.244)	eta 0:00:48	loss 11.8707 (11.8707)	lr 1.728969e-03
+Do evaluation on val set
+mAP score default: 50.710298726587425
+mAP score: 50.710298726587425
+epoch [14/50][1/1]	time 1.402 (1.402)	data 1.326 (1.326)	eta 0:00:50	loss 11.2900 (11.2900)	lr 1.684547e-03
+Do evaluation on val set
+mAP score default: 52.318590091151975
+mAP score: 52.318590091151975
+Checkpoint saved to "output/few-shot/coco-1/prompt_learner/model-best.pth.tar"
+epoch [15/50][1/1]	time 1.400 (1.400)	data 1.323 (1.323)	eta 0:00:49	loss 11.7070 (11.7070)	lr 1.637424e-03
+Do evaluation on val set
+mAP score default: 54.99904450446955
+mAP score: 54.99904450446955
+Checkpoint saved to "output/few-shot/coco-1/prompt_learner/model-best.pth.tar"
+epoch [16/50][1/1]	time 1.273 (1.273)	data 1.198 (1.198)	eta 0:00:43	loss 11.1435 (11.1435)	lr 1.587785e-03
+Do evaluation on val set
+mAP score default: 56.88601711025869
+mAP score: 56.88601711025869
+Checkpoint saved to "output/few-shot/coco-1/prompt_learner/model-best.pth.tar"
+epoch [17/50][1/1]	time 1.390 (1.390)	data 1.314 (1.314)	eta 0:00:45	loss 10.6370 (10.6370)	lr 1.535827e-03
+Do evaluation on val set
+mAP score default: 57.07522052468328
+mAP score: 57.07522052468328
+Checkpoint saved to "output/few-shot/coco-1/prompt_learner/model-best.pth.tar"
+epoch [18/50][1/1]	time 1.355 (1.355)	data 1.279 (1.279)	eta 0:00:43	loss 10.9270 (10.9270)	lr 1.481754e-03
+Do evaluation on val set
+mAP score default: 54.894639835160696
+mAP score: 54.894639835160696
+epoch [19/50][1/1]	time 1.403 (1.403)	data 1.327 (1.327)	eta 0:00:43	loss 10.1014 (10.1014)	lr 1.425779e-03
+Do evaluation on val set
+mAP score default: 54.59146950942373
+mAP score: 54.59146950942373
+epoch [20/50][1/1]	time 1.276 (1.276)	data 1.200 (1.200)	eta 0:00:38	loss 11.0991 (11.0991)	lr 1.368125e-03
+Do evaluation on val set
+mAP score default: 55.891683904952494
+mAP score: 55.891683904952494
+epoch [21/50][1/1]	time 1.438 (1.438)	data 1.362 (1.362)	eta 0:00:41	loss 9.4274 (9.4274)	lr 1.309017e-03
+Do evaluation on val set
+mAP score default: 55.56780315844443
+mAP score: 55.56780315844443
+epoch [22/50][1/1]	time 1.349 (1.349)	data 1.273 (1.273)	eta 0:00:37	loss 10.7239 (10.7239)	lr 1.248690e-03
+Do evaluation on val set
+mAP score default: 54.132552764314
+mAP score: 54.132552764314
+epoch [23/50][1/1]	time 1.439 (1.439)	data 1.363 (1.363)	eta 0:00:38	loss 9.8537 (9.8537)	lr 1.187381e-03
+Do evaluation on val set
+mAP score default: 53.588499958919
+mAP score: 53.588499958919
+epoch [24/50][1/1]	time 1.286 (1.286)	data 1.209 (1.209)	eta 0:00:33	loss 11.3196 (11.3196)	lr 1.125333e-03
+Do evaluation on val set
+mAP score default: 54.741482932105946
+mAP score: 54.741482932105946
+epoch [25/50][1/1]	time 1.382 (1.382)	data 1.306 (1.306)	eta 0:00:34	loss 10.1170 (10.1170)	lr 1.062791e-03
+Do evaluation on val set
+mAP score default: 55.926741469194475
+mAP score: 55.926741469194475
+epoch [26/50][1/1]	time 1.287 (1.287)	data 1.211 (1.211)	eta 0:00:30	loss 11.0685 (11.0685)	lr 1.000000e-03
+Do evaluation on val set
+mAP score default: 55.87875977941843
+mAP score: 55.87875977941843
+epoch [27/50][1/1]	time 1.417 (1.417)	data 1.341 (1.341)	eta 0:00:32	loss 10.5881 (10.5881)	lr 9.372095e-04
+Do evaluation on val set
+mAP score default: 55.4228378873739
+mAP score: 55.4228378873739
+epoch [28/50][1/1]	time 1.393 (1.393)	data 1.317 (1.317)	eta 0:00:30	loss 9.9430 (9.9430)	lr 8.746668e-04
+Do evaluation on val set
+mAP score default: 55.024813931955585
+mAP score: 55.024813931955585
+epoch [29/50][1/1]	time 1.306 (1.306)	data 1.230 (1.230)	eta 0:00:27	loss 10.8766 (10.8766)	lr 8.126187e-04
+Do evaluation on val set
+mAP score default: 55.157716705562734
+mAP score: 55.157716705562734
+epoch [30/50][1/1]	time 1.406 (1.406)	data 1.330 (1.330)	eta 0:00:28	loss 9.5857 (9.5857)	lr 7.513101e-04
+Do evaluation on val set
+mAP score default: 55.5018236108249
+mAP score: 55.5018236108249
+epoch [31/50][1/1]	time 1.425 (1.425)	data 1.349 (1.349)	eta 0:00:27	loss 10.2831 (10.2831)	lr 6.909830e-04
+Do evaluation on val set
+mAP score default: 56.24961716918403
+mAP score: 56.24961716918403
+epoch [32/50][1/1]	time 1.365 (1.365)	data 1.289 (1.289)	eta 0:00:24	loss 9.2550 (9.2550)	lr 6.318754e-04
+Do evaluation on val set
+mAP score default: 56.53900612463054
+mAP score: 56.53900612463054
+epoch [33/50][1/1]	time 1.396 (1.396)	data 1.320 (1.320)	eta 0:00:23	loss 10.6546 (10.6546)	lr 5.742207e-04
+Do evaluation on val set
+mAP score default: 56.27870740369717
+mAP score: 56.27870740369717
+epoch [34/50][1/1]	time 1.291 (1.291)	data 1.216 (1.216)	eta 0:00:20	loss 9.4508 (9.4508)	lr 5.182463e-04
+Do evaluation on val set
+mAP score default: 55.788580234260074
+mAP score: 55.788580234260074
+epoch [35/50][1/1]	time 1.450 (1.450)	data 1.374 (1.374)	eta 0:00:21	loss 9.5905 (9.5905)	lr 4.641732e-04
+Do evaluation on val set
+mAP score default: 55.317760307149065
+mAP score: 55.317760307149065
+epoch [36/50][1/1]	time 1.413 (1.413)	data 1.338 (1.338)	eta 0:00:19	loss 9.5997 (9.5997)	lr 4.122147e-04
+Do evaluation on val set
+mAP score default: 54.89981049281612
+mAP score: 54.89981049281612
+epoch [37/50][1/1]	time 1.503 (1.503)	data 1.427 (1.427)	eta 0:00:19	loss 8.9671 (8.9671)	lr 3.625760e-04
+Do evaluation on val set
+mAP score default: 54.60872508633771
+mAP score: 54.60872508633771
+epoch [38/50][1/1]	time 1.332 (1.332)	data 1.256 (1.256)	eta 0:00:15	loss 9.5749 (9.5749)	lr 3.154529e-04
+Do evaluation on val set
+mAP score default: 54.623137935189334
+mAP score: 54.623137935189334
+epoch [39/50][1/1]	time 1.364 (1.364)	data 1.288 (1.288)	eta 0:00:15	loss 10.4215 (10.4215)	lr 2.710314e-04
+Do evaluation on val set
+mAP score default: 54.65022098291137
+mAP score: 54.65022098291137
+epoch [40/50][1/1]	time 1.407 (1.407)	data 1.332 (1.332)	eta 0:00:14	loss 10.1591 (10.1591)	lr 2.294868e-04
+Do evaluation on val set
+mAP score default: 54.74891118045952
+mAP score: 54.74891118045952
+epoch [41/50][1/1]	time 1.341 (1.341)	data 1.266 (1.266)	eta 0:00:12	loss 10.0844 (10.0844)	lr 1.909830e-04
+Do evaluation on val set
+mAP score default: 54.67180796227048
+mAP score: 54.67180796227048
+epoch [42/50][1/1]	time 1.418 (1.418)	data 1.342 (1.342)	eta 0:00:11	loss 10.3821 (10.3821)	lr 1.556721e-04
+Do evaluation on val set
+mAP score default: 54.58990050324795
+mAP score: 54.58990050324795
+epoch [43/50][1/1]	time 1.372 (1.372)	data 1.297 (1.297)	eta 0:00:09	loss 10.0427 (10.0427)	lr 1.236933e-04
+Do evaluation on val set
+mAP score default: 54.451791274492614
+mAP score: 54.451791274492614
+epoch [44/50][1/1]	time 1.306 (1.306)	data 1.230 (1.230)	eta 0:00:07	loss 9.2244 (9.2244)	lr 9.517295e-05
+Do evaluation on val set
+mAP score default: 54.2958484991356
+mAP score: 54.2958484991356
+epoch [45/50][1/1]	time 1.311 (1.311)	data 1.236 (1.236)	eta 0:00:06	loss 9.2868 (9.2868)	lr 7.022351e-05
+Do evaluation on val set
+mAP score default: 54.11568418665338
+mAP score: 54.11568418665338
+epoch [46/50][1/1]	time 1.389 (1.389)	data 1.314 (1.314)	eta 0:00:05	loss 9.5289 (9.5289)	lr 4.894348e-05
+Do evaluation on val set
+mAP score default: 53.98886651724786
+mAP score: 53.98886651724786
+epoch [47/50][1/1]	time 1.303 (1.303)	data 1.226 (1.226)	eta 0:00:03	loss 9.7599 (9.7599)	lr 3.141684e-05
+Do evaluation on val set
+mAP score default: 53.917830515307166
+mAP score: 53.917830515307166
+epoch [48/50][1/1]	time 1.646 (1.646)	data 1.565 (1.565)	eta 0:00:03	loss 9.1255 (9.1255)	lr 1.771275e-05
+Do evaluation on val set
+mAP score default: 53.898396394111906
+mAP score: 53.898396394111906
+epoch [49/50][1/1]	time 1.420 (1.420)	data 1.342 (1.342)	eta 0:00:01	loss 8.8333 (8.8333)	lr 7.885299e-06
+Do evaluation on val set
+mAP score default: 53.91032227774664
+mAP score: 53.91032227774664
+epoch [50/50][1/1]	time 1.568 (1.568)	data 1.492 (1.492)	eta 0:00:00	loss 9.4517 (9.4517)	lr 1.973272e-06
+Do evaluation on val set
+mAP score default: 53.90475589657002
+mAP score: 53.90475589657002
+Checkpoint saved to "output/few-shot/coco-1/prompt_learner/model.pth.tar-50"
+Finished training
+Deploy the model with the best val performance
+Loading weights to prompt_learner from "output/few-shot/coco-1/prompt_learner/model-best.pth.tar" (epoch = 17)
+Do evaluation on test set
+mAP score default: 56.285968155065426
+mAP score: 56.285968155065426
+Elapsed: 0:05:17
