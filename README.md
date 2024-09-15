@@ -12,6 +12,8 @@ This repo officially implements **TAI++: Text as Image for Multi-Label Image Cla
 <img src="./figures/pvp.png">
 
 Fig.1 Overview of the two stages.
+
+Checkpoint and log.txt of [[CoOp-16-shot](https://paperswithcode.com/paper/tai-text-as-image-for-multi-label-image)] on the MSCOCO dataset.
 </center>
 
 ## Install
@@ -56,7 +58,7 @@ sh generate_data.sh
 sh pretrain.sh
 ```
 
-#### 1. **Stage 2:**
+#### 2. **Stage 2:**
 ```
 cd pvp_finetune
 
