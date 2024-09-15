@@ -12,8 +12,6 @@ This repo officially implements **TAI++: Text as Image for Multi-Label Image Cla
 <img src="./figures/pvp.png">
 
 Fig.1 Overview of the two stages.
-
-Checkpoint and log.txt of [[CoOp-16-shot](https://paperswithcode.com/paper/tai-text-as-image-for-multi-label-image)] on the MSCOCO dataset.
 </center>
 
 ## Install
